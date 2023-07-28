@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DEVINE COMPASSION BUREAU</title>
+<link href="style.css" rel="style sheet" type="text/css">
+</head>
+<style> 
+ .dove{
+ background-color: blue;
+ color: white; 
+ text-align:center ;
+ font-weight: bold;
+ font-size: 40px;
+ font-family: elephant;
+ height: 100px;
+ padding-top: 20px;
+ box-shadow: 10px 10px 10px red;
+ border-radius: 5px;
+ text-decoration: underline;
+ } 
+ .muks{
+    background-color: red;
+    color: white;
+    text-align:left;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: lucida calligraphy;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    box-shadow: 10px 10px 10px  blue;
+    border-radius: 5px;
+ }
+ .muks:hover{
+  text-decoration: underline;
+  cursor: pointer;
+ }
+ .follow{
+    background-color: green;
+    color: white;
+    margin-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    font-family: arial;
+    font-size: 16px;
+    border-radius: 5px;
+    border-color: yellow;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px black;
+    transition: opacity 1s;
+ } 
+ .follow:hover{
+  background-color: red;
+  opacity: 0.9;
+ }
+ .follow:active{
+  opacity: 0.2;
+ }
+ .explore{
+    background-color: rgba(174, 0, 255, 0.925);
+    color: rgba(255, 255, 255, 0.918);
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-family: arial;
+    font-size: 16px;
+    border-radius: 5px;
+    border-color: rgb(60, 255, 0);
+    cursor: pointer;
+    box-shadow: 10px 10px 10px black;
+    transition: opacity 1s;
+ }
+ .explore:hover{
+  background-color: rgba(0, 89, 255, 0.904);
+  opacity: 0.9;
+ }
+ .explore:active{
+  opacity: 0.2;
+ }
+ .live{
+   background-color: rgb(218, 6, 24);
+   color: rgba(235, 241, 241, 0.979);
+   margin-left: 20px;
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   font-weight: bold;
+   font-family: arial;
+   font-size: 16px;
+   border-radius: 5px;
+   border-color: rgb(0, 255, 179);
+   cursor: pointer;
+   box-shadow: 2px 4px 4px rgba(10, 18, 19, 0.808);
+   transition: opacity 1s;
+   box-shadow: 10px 10px 10px black;
+ }
+ .live:hover{
+  background-color: rgba(119, 0, 255, 0.884);
+  opacity: 0.9;
+ }
+ .live:active{
+  opacity: 0.2;
+ }
+ .devine{
+   text-align: center;
+   background-color: rgba(3, 29, 34, 0.89);
+   font-weight: bold;
+   font-size: 60px;
+   font-family: CRACKED JOHNNIE;
+   color: rgb(164, 252, 0);
+   box-shadow: 10px 10px 10px purple;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+ .prayer{
+   width: 400px;
+   height: 250px;
+   border-radius: 5px;
+   border-width: 7px;
+   border-style: solid;
+   border-color: red;
+ }
+ .true{
+   color: rgba(231, 231, 248, 0.952);
+   font-family: arial;
+   font-size: 20px;
+   background-color: black;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   box-shadow: 10px 10px 10px yellow;
+   border-radius: 4px;
+   margin-left: 10px;
+ }
+ .family{
+   width: 400px;
+   height: 250px;
+   border-radius: 5px;
+   display:inline-block;
+   margin-top: 10px;
+   margin-left: 30px;
+   border-width: 7px;
+   border-style: solid;
+   border-color: red; 
+   
+ }
+ .searchbox{
+  background-color: white;
+  color:rgb(8, 14, 20);
+  border-color: rgba(119, 0, 255, 0.932);
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 13px;
+  padding-left: 13px;
+  margin-left: 10px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 10px rgba(161, 31, 122, 0.897);
+
+ }
+ .sign{
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  font-family: elephant;
+  font-size: 35px;
+  padding-top: 40px;
+  padding-left: 10px;
+  text-align:center;
+  height: 100px;
+  box-shadow: 10px 10px 10px rgb(255, 174, 0);
+  border-radius: 5px;
+  text-decoration: underline;
+  margin-left: 10px;
+ }
+ .pry{
+  font-weight: bold;
+  font-family: arial;
+  font-size: 25px;
+  width: 410px;
+  background-color:rgba(128, 0, 85, 0.918);
+  color: white;
+  border-radius: 5px;
+  margin-top: 2px;
+  cursor: pointer;
+  margin-left: 4px;
+ }
+ .really{
+  color:white;
+  font-weight: bold;
+  font-family: Franklin Gothic Medium;
+  font-size: 22px;
+  width: 410px;
+  line-height: 26px;
+  background-color: rgba(44, 3, 63, 0.925);
+  border-radius: 2px;
+ }
+ .group{
+  width: 400px;
+   height: 250px;
+   border-radius: 5px;
+   display:inline-block;
+   margin-top: 10px;
+   margin-left: 10px;
+   border-width: 7px;
+   border-style: solid;
+   border-color: red;
+ }
+ .aly{
+  width: 100px;
+  height: 90px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+ }
+ .expand{
+  width: 100px;
+  height: 90px;
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
+ }
+ .devine:hover{
+  text-decoration: underline;
+ }
+ .pry:hover{
+  text-decoration: underline;
+ }
+ .aly{
+  background-color: rgba(255, 0, 140, 0.767);
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+
+ }
+ .aly:hover{
+  text-decoration: underline;
+ }
+ .prayers{
+  display: inline-block;
+  margin-left: 10px;
+ }
+ .family-preview{
+  display: inline-block;
+ }
+ .group-preview{
+  display: inline-block;
+  margin-left: 20px;
+ }
+ .elders{
+  font-weight: bold;
+  font-family: arial;
+  font-size: 25px;
+  width: 410px;
+  background-color:rgba(0, 81, 255, 0.925);
+  color: white;
+  border-radius: 5px;
+  margin-top: 2px;
+  cursor: pointer;
+  margin-left: 30px;
+ }
+ .married{
+  font-weight: bold;
+  font-family: arial;
+  font-size: 25px;
+  width: 410px;
+  background-color:rgba(248, 9, 108, 0.979);
+  color: white;
+  border-radius: 5px;
+  margin-top: 2px;
+  cursor: pointer;
+  margin-left: 10px;
+ }
+ .opportunity{
+  margin-left: 30px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: arial;
+  width: 410px;
+  line-height: 22px;
+  border-radius: 3px;
+ }
+ .couples{
+  width: 420px;
+  background-color: rgba(38, 0, 255, 0.89);
+  font-weight: bold;
+  font-family: arial;
+  font-size: 20px;
+  color: white;
+  line-height: 22px;
+  border-radius: 3px;
+ }
+ .ma{
+   width: 230px;
+  height: 200px;
+  display: inline-block;
+  margin-left: 4px;
+  margin-right: 5px;
+  border-radius: 2px; 
+ }
+ .pap{
+   width: 210px;
+  height: 200px;
+  display: inline-block;
+  margin-left: 3px;
+  margin-right: 6px;
+  border-radius: 2px; 
+ }
+ .leaf{
+   width: 100px;
+  height: 90px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 10px;
+  border-radius: 10px; 
+ }
+ .pa{
+  width: 400px;
+  height: 200px;
+  margin-right: 5px;
+  border-radius: 4px; 
+ }
+ .women{
+  width: 250px;
+  height: 200px;
+  display: inline-block;
+  margin-left: 4px;
+  margin-right: 0px;
+  border-radius: 2px;
+ }
+ .prayers{
+  background-color: black;
+ }
+ .family-preview{
+  background-color: yellow;
+  margin-left: 10px;
+ }
+ .group-preview{
+  background-color: red;
+  margin-left: 10px;
+ }
+ .roots{
+  background-color: rgba(213, 231, 188, 0.911);
+ }
+ .joining{
+  background-color:black;
+  color: white;
+  width: 654px;
+  height: 843px;
+  display: inline-block;
+  margin-left: 5px;
+ }
+ .account{
+  font-weight: bold;
+  font-size:25px ;
+  font-family: arial;
+  background-color: rgb(4, 4, 134);
+  color: white;
+ }
+ .name-1{
+  width: 250px;
+  height: 40px;
+  border-color: grey;
+  border-radius: 4px;
+  margin-left: 15px;
+ }
+ .name-2{
+  width: 250px;
+  height: 40px;
+  border-color: grey;
+  border-radius: 4px;
+  display: inline-block;
+  margin-left: 20px;
+ }
+ .mobile{
+  width: 250px;
+  height: 40px;
+  border-color: grey;
+  border-radius: 4px; 
+  margin-left: 15px;
+  display: block;
+  margin-top: 15px;
+ }
+ .email-box{
+  width: 400px;
+  height: 40px;
+  border-color: grey;
+  border-radius: 4px; 
+  margin-left: 15px;
+  display: block;
+  margin-top: 15px;
+ }
+ .already{
+  margin-top: 10px;
+  font-weight: bold;
+  font-family: arial;
+  background-color: red;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 100px;
+  border-radius: 4px;
+  cursor: pointer;
+       transition: opacity 1s;
+ }
+ .already:hover{
+  background-color: rgba(0, 102, 255, 0.904);
+  opacity: 0.9;
+ }
+ .already:active{
+  opacity: 0.2;
+ }
+ .open{
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: arial;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  margin-left: 20px;
+  border-radius: 4px;
+ padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+    transition: opacity 1s;
+ }
+ .open:hover{
+   background-color: rgb(255, 60, 0);
+  opacity: 0.9;
+ }
+ .open:active{
+   opacity: 0.2;
+ }
+ .ok{
+   margin-top: 20px;
+  font-weight: bold;
+  font-family: arial;
+  background-color: rgba(255, 81, 0, 0.918);
+  color: white;
+  cursor: pointer;
+  margin-left: 20px;
+  border-radius: 4px;
+ padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+    transition: opacity 1s;
+ }
+ .ok:hover{
+  background-color: rgb(143, 129, 6);
+  opacity: 0.9; 
+ }
+ .ok:active{
+   opacity: 0.2;
+ }
+ .yes{
+   margin-top: 20px;
+  font-weight: bold;
+  font-family: arial;
+  background-color: rgb(237, 241, 241);
+  color: rgb(0, 81, 255);
+  cursor: pointer;
+  margin-left: 20px;
+  border-radius: 4px;
+ padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+    transition: opacity 1s;
+ }
+ .yes:hover{
+  background-color: rgb(0, 89, 255);
+  opacity: 0.9;
+  color: white; 
+ }
+ .yes:active{
+  opacity: 0.2;
+ }
+ .mzu{
+  width: 330px;
+  height: 200px;
+  margin-top: 4px;
+  margin-left: 5px;
+ }
+ .mzung{
+  width: 190px;
+  height: 200px;
+  margin-top: 4px;
+  margin-left: 5px;
+  display: inline-block;
+ }
+ .saving{
+  display: block;
+  background-color: rgb(3, 105, 3);
+  width: 652px;
+  height: 230px;
+  margin-left: 4px;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: bold;
+  font-family: arial;
+ }
+ .activities{
+  background-color: orangered;
+  width: 652px;
+  height: 840px;
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: top;
+ }
+ .bapt{
+  width: 340px;
+  height: 208px;
+ }
+ .broz{
+  width: 300px;
+  height: 208px;
+  display: inline-block;
+  margin-left: 5px;
+ }
+ .school-1{
+  width: 340px;
+  height: 212px;
+ }
+ .school-2{
+  width: 300px;
+  height: 208px;
+  display: inline-block;
+  margin-left: 5px; 
+ }
+ .school-3{
+  width: 340px;
+  height: 215px; 
+ }
+ .school-4{
+  width: 300px;
+  height: 215px;
+  display: inline-block;
+  margin-left: 5px;  
+ }
+ .bureau{
+  background-color: rgb(0, 102, 255);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: arial;
+  line-height: 25px;
+ }
+ .agric{
+  background-color: rgb(0, 124, 128);
+  color: white;
+  font-weight: bold;
+  font-family: arial;
+  font-size: 22px;
+  padding-top: 4px;
+  padding-bottom:4px;
+ }
+ .mums{
+  width: 110px;
+  height: 200px;
+  display: inline-block;
+ }
+</style>
+<body>
+  <div class="roots">
+<h1 class="dove"> <img src="Divine logo.jpg" class="aly">DIVINE COMPASSION BUREAU -UGANDA <img src="Divine logo.jpg" class="expand"></h1>
+<h2 class="sign"><span class="aly">ALLIES OF THE</span> SIGN OF THE DOVE MINISTRY-NYENJE,MUKONO.<img src="dove 3.jpg" class="leaf"></h2>
+<p class="muks"><img src="papa5.jpg" class="pa"><img src="papa3.jpg" class="pap">
+  FOR LORD<img src="mama2.jpg" class="ma"><img src="women 1.jpg" class="women"></p>
+<a href="dove web. com@2023. html.html">HOME</a>|
+<a href="IMAGES.html">IMAGES</a>|
+<a href="VIDEOS.html">VIDEOS</a>|
+<a href="NEWS.html">NEWS</a>|
+<a href="SERVICES.html">SERVICES</a>|
+<a href="About.html">ABOUT</a>|
+<a href="FAQ.html">FAQ</a>|
+<button class="follow">Follow</button>
+<button class="explore">Explore</button>
+<button class="live">live stream</button>
+  <input type="text" , placeholder="freely search here " class="searchbox" > 
+<h3 class="devine">Are you ready to meet the true divine moment?</h3>
+<p class="true">Experience true worship of all times and don't miss any moment like;</p>
+</div>
+<div class="prayers">
+  <img src="prayer 1.jpg" class="prayer">
+  <p class="pry">Don't miss a moment of break throught prayers with the prayer warriors at the church .</p>
+  <p class="really"> We do really pray and interceed for our needs and wants.The ministry is being led by a team of strong competent leaders to feed the brethrens with spiritual food that 
+    enriches their lives by His Grace.</p>
+</div>
+<div class="family-preview">
+  <img src="family 1.jpg" class="family">
+  <p class="elders">The chosen gifted leaders team of Divine compassion bureau in coalition with the
+    church .</p>
+  <p class="opportunity"> Divine compassion makes sure that all brethrens are given opportunity
+     to have a part they play in the growth of the ministry globally and locally 
+    through the use of the available resources from the members of the church hence helping them lead a sustainable life
+  . </p>
+</div>
+<div class="group-preview">
+  <img src="group 1.jpg" class="group">
+  <p class="married">Officials from devine compassion in  What a
+    mustn't miss round! outside with married couples . </p>
+  <p class="couples"> The compassion takes on the initiative of doing marriage counselling to the victims
+   to fulfill the writing that it belongs to Our lord ,so it has to be handled with care. 
+   They are taken out for another experience in tranquil places like hotels.
+  </p>
+</div> 
+<div class="joining">
+  <p class="account">Open account with Divine Compassion Bureau for notifications about the programmes
+    of the project as well as getting chance to link with friends around the world for constructive mindset discussions and aid.
+  </p>
+  <img src="julie- 2.jpg" class="mzu">
+  <img src="julie-3.jpg" class="mzung"> 
+  <img src="mummy -1.jpg" class="mums">
+  <input type="text" , placeholder="first name " class="name-1" > 
+  <input type="text" , placeholder="last name " class="name-2" >
+  <input type="text" , placeholder="phone number " class="mobile" > 
+  <input type="text" , placeholder="Email " class="email-box" >
+  <button class="already">Already have an account?</button>
+  <button class="open">Create account</button>
+  <button class="ok">Sign up</button><button class="yes">Log in</button> 
+<p class="saving">Divine compassion is working towards helping brethrens have an economically sustainable life
+  through these activities .i.e; Education for all through vocational skilling. As compassion 
+  we have also established " Men of compassion investment club " to help men in the church get a 
+  habit of saving to satisfy their long term needs. 
+  The project also is looking forward to also establish  women of compassion programmes that call
+  for their emancipation hence promoting their rights through united farming groups, adult Education
+  , planned saving programmes as these days it has been discovered that most men neglect their
+  responsibility.The compassion has already started to stand with children and mothers who are victims
+  of neglection throught guidance and counselling sessions to mend their souls. 
+</p> 
+</div>
+<div class="activities">
+  <p class="bureau">D.C Bureau has introduced the men of compassion investment club ,aimed at boosting
+    men's financial status and developing their economic skills in the prevailing situation in the 
+    country for the better future after proper utilisation of resources available.
+  </p>
+  <img src="baptism2.jpg" class="bapt">
+  <img src="brothers.jpg" class="broz">
+  <img src="mentor1.jpg"  class="school-1">
+  <img src="money1.jpg"  class="school-2">
+  <img src="plant 1.jpg"  class="school-3">
+  <img src="plant 2.jpg"  class="school-4">
+  <p  class="agric" >Agriculture is one of the prioritised projects for both men and women of compassion investments</p>
+</div>
+</body>
+</html>
